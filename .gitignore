@@ -1,0 +1,15 @@
+# Local Terraform state
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate.*
+ 
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform temp files
+.terraform/
+.terraform.lock.hcl
+
+# aws provider files
+terraform-provider-aws_v5.93.0_x5
