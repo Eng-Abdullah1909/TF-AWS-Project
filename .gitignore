@@ -12,4 +12,4 @@ crash.*.log
 .terraform.lock.hcl
 
 # aws provider files
-terraform-provider-aws_v5.93.0_x5
+.terraform/providers/registry.terraform.io/hashicorp/aws/5.93.0/windows_386/terraform-provider-aws_v5.93.0_x5.exe
