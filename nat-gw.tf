@@ -5,11 +5,11 @@ resource "aws_eip" "lb" {
 }
 
 
-resource "aws_nat_gateway" "example" {
+resource "aws_nat_gateway" "nat-gw" {
   allocation_id = aws_eip.lb.id
   subnet_id     = aws_subnet.subnet4.id
 
   tags = {
-    Name = "gw NAT"
+    Name = "nat-gw"
   }
 }
