@@ -1,6 +1,6 @@
 resource "aws_eip" "lb" {
   tags = {
-  Name = "natGW-eip"
+    Name = "natGW-eip"
   }
 }
 

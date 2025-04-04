@@ -1,6 +1,6 @@
 resource "aws_security_group" "HTTP-SG" {
-  
-  vpc_id = aws_vpc.main.id
+
+  vpc_id      = aws_vpc.main.id
   description = "HTTP Sec-group for load-balancer"
 
   ingress {
@@ -18,22 +18,22 @@ resource "aws_security_group" "HTTP-SG" {
   }
 
   egress {
-    from_port        = 0
-    to_port          = 0
-    protocol         = "-1"
-    cidr_blocks      = ["0.0.0.0/0"]
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
 
   tags = {
-     name = "HTTP-SG" 
+    name = "HTTP-SG"
   }
 }
 
 
 resource "aws_security_group" "Bastion-SG" {
-  
-  vpc_id = aws_vpc.main.id
+
+  vpc_id      = aws_vpc.main.id
   description = "Sec-group for Jump server"
 
   ingress {
@@ -44,13 +44,13 @@ resource "aws_security_group" "Bastion-SG" {
   }
 
   egress {
-    from_port        = 0
-    to_port          = 0
-    protocol         = "-1"
-    cidr_blocks      = ["0.0.0.0/0"]
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   tags = {
-     name = "Jump-server-SG" 
+    name = "Jump-server-SG"
   }
 }
