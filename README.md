@@ -8,6 +8,8 @@ This repository contains the Terraform configuration for deploying a **highly av
 - **S3 backup storage** for data backups.
 - Secure network configurations using **public and private subnets** with a **NAT Gateway** for outbound internet access from private instances.
 
+![App Screenshot](Desktop/1.jpg)
+
 ---
 
 ## Objective:
